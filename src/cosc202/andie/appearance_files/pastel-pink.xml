@@ -1,0 +1,294 @@
+<synth>
+    <!-- Primary: #F4A698 -->
+    <!-- Secondary: #FFC4C4 -->
+    <!-- Secondary Action: #F5C598 -->
+    <!-- Secondary Hover: #dedede -->
+    <!-- Complementary Passive: #7D534B -->
+    <!-- Complementary Active: #44302C -->
+    <!-- Interactable: #E77E7E -->
+    <!-- Track: #FFDDDD -->
+
+    <!-- Default -->
+     <style id="default">
+        <opaque value="true"/>
+        <insets top="5" left="5" bottom="5" right="5"/>
+        <font name="DIALOG" size="12"/>
+        <state>
+            <!-- Primary -->
+            <color value="#F4A698" type="BACKGROUND"/>
+
+            <!-- Complementary Passive -->
+            <color value="#7D534B" type="FOREGROUND"/>
+        </state>
+    </style>
+    <bind style="default" type="region" key=".*"/> 
+
+    <!-- JFileChooser -->
+    <style id="filechooser">
+        <opaque value="true"/>
+        <state>
+            <imageIcon id="directoryIcon" path="appearance_files/images/folder.png"/>
+            <property key="FileView.directoryIcon" value="directoryIcon"/>
+
+            <imageIcon id="fileIcon" path="appearance_files/images/file.png"/>
+            <property key="FileView.fileIcon" value="fileIcon"/>
+
+            <imageIcon id="computerIcon" path="appearance_files/images/computer.png"/>
+            <property key="FileView.computerIcon" value="computerIcon"/>
+
+            <imageIcon id="hardDriveIcon" path="appearance_files/images/hard-drive.png"/>
+            <property key="FileView.hardDriveIcon" value="hardDriveIcon"/>
+
+            <imageIcon id="floppyDriveIcon" path="appearance_files/images/floppy.png"/>
+            <property key="FileView.floppyDriveIcon" value="floppyDriveIcon"/>
+
+            <imageIcon id="newFolderIcon" path="appearance_files/images/new-folder.png"/>
+            <property key="FileChooser.newFolderIcon" value="newFolderIcon"/>
+
+            <imageIcon id="upFolderIcon" path="appearance_files/images/up.png"/>
+            <property key="FileChooser.upFolderIcon" value="upFolderIcon"/>
+
+            <imageIcon id="homeFolderIcon" path="appearance_files/images/home.png"/>
+            <property key="FileChooser.homeFolderIcon" value="homeFolderIcon"/>
+
+            
+        </state>
+    </style>
+    <bind style="filechooser" type="region" key="FileChooser"/>
+
+    <!-- Root Pane (frame) -->
+    <style id="rootpane">
+        <opaque value="true"/>
+        <insets/>
+    </style>
+    <bind style="rootpane" type="region" key="RootPane"/>
+
+    <!-- JToolTip -->
+    <style id="tooltip">
+        <opaque value="true"/>
+        <state>
+            <!-- Complementary -->
+            <color value="#44302C" type="FOREGROUND"/>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="tooltip" type="region" key="ToolTip"/>
+
+    <!-- JLabel -->
+    <style id="label">
+        <opaque value="true"/>
+        <state>
+            <!-- Complementary Passive -->
+            <color value="#44302C" type="FOREGROUND"/>
+        </state>
+    </style>
+    <bind style="label" type="region" key="Label"/>
+
+    <!-- JPopupMenu -->
+    <style id="popupmenu">
+        <opaque value = "true"/>
+         <insets/>
+    </style>
+    <bind style="popupmenu" type="region" key="PopupMenu"/>
+
+    <!-- JPanel -->
+    <style id="panel">
+        <opaque value = "true"/>
+        <insets/>
+    </style>
+    <bind style="panel" type="region" key="Panel"/>
+
+    <!-- JButton -->
+    <style id="button">
+        <opaque value = "true"/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+            
+        </state>
+        <state value="PRESSED">
+            <!-- Secondary Action -->
+            <color value="#F5C598" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="button" type="region" key="Button"/>
+
+    <!-- JToggleButton -->
+    <style id="togglebutton">
+        <opaque value = "true"/>
+        <insets/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+            
+        </state>
+        <state value="PRESSED">
+            <!-- Secondary Action -->
+            <color value="#F5C598" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="togglebutton" type="region" key="ToggleButton"/>
+
+    <!-- JMenuBar -->
+    <style id="menubar">
+        <opaque value="true"/>
+        <insets/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="menubar" type="region" key="MenuBar"/>
+
+    <!-- JMenu -->
+    <style id="menu">
+        <opaque value = "true"/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+        </state>
+        <state value ="SELECTED">
+            <!-- Secondary Action -->
+            <color value="#F5C598" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="menu" type="region" key="Menu"/>
+
+    <!-- JMenuItem -->
+    <style id="menuitem">
+        <opaque value = "true"/>
+        <state>
+            <!-- Secondary Action -->
+            <color value="#F5C598" type="BACKGROUND"/>
+        </state>
+        <state value ="MOUSE_OVER">
+            <!-- Secondary Hover -->
+            <color value="#dedede" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="menuitem" type="region" key="MenuItem"/> 
+
+    <!-- JOptionPane -->
+    <style id="optionpane">
+        <opaque value="true"/>
+        <state>
+            
+            <imageIcon id="errorIcon" path="appearance_files/images/error.png"/>
+            <property key="OptionPane.errorIcon" value="errorIcon"/>
+
+            <imageIcon id="informationIcon" path="appearance_files/images/information.png"/>
+            <property key="OptionPane.informationIcon" value="informationIcon"/>
+
+            <imageIcon id="questionIcon" path="appearance_files/images/question.png"/>
+            <property key="OptionPane.questionIcon" value="questionIcon"/>
+
+            <imageIcon id="warningIcon" path="appearance_files/images/warning.png"/>
+            <property key="OptionPane.warningIcon" value="warningIcon"/>
+        </state>
+    </style>
+    <bind style="optionpane" type="region" key="OptionPane"/>
+
+    <!-- JComboBox -->
+    <style id="combobox">
+        <opaque value = "true"/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="combobox" type="region" key="ComboBox"/>
+    
+    <!-- JList -->
+    <style id="list">
+        <opaque value = "true"/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+            <property key="List.cellHeight" type="integer" value="20"/>
+        </state>
+    </style>
+    <bind style="list" type="region" key="List"/>
+
+    <!-- ArrowButton -->
+    <style id="arrowbutton">
+        <opaque value ="true"/>
+        <state> 
+            <!-- Interactable -->
+            <color value="#E77E7E" type="BACKGROUND"/>
+            <imagePainter method ="arrowButtonBackground" path="appearance_files/images/arrow.png" sourceInsets="0 0 0 0"/>
+        </state>
+    </style>
+    <bind style="arrowbutton" type="region" key="ArrowButton"/>
+
+    <!-- JSliderThumb -->
+    <style id="sliderthumb">
+        <opaque value ="false"/>
+        <state>
+            <imagePainter method ="sliderThumbBackground" path="appearance_files/images/slider.png" sourceInsets="1 1 1 1"/>   
+        </state>
+    </style>
+    <bind style="sliderthumb"  type="region" key="SliderThumb"/>
+
+    <!-- JSliderTrack -->
+    <style id="slidertrack">
+        <opaque value ="true"/>
+        <state>  
+            <!-- Track -->
+            <color value="#FFDDDD" type="BACKGROUND"/>
+            
+        </state>
+    </style>
+    <bind style="slidertrack" type="region" key="SliderTrack"/>
+
+    <!-- JSlider -->
+    <style id="slider">
+        <opaque value="true"/>
+        <state>
+            <property key="Slider.paintValue" type="boolean" value="false"/>
+            <property key="Slider.thumbWidth" type="integer" value="20"/>
+            <property key="Slider.thumbHeight" type="integer" value="20"/>
+        </state>
+    </style>
+    <bind style="slider" type="region" key="Slider"/>
+
+    <!-- JText* -->
+    <style id="text">
+        <opaque value ="true"/>
+        <state>
+            <!-- Secondary -->
+            <color value="#FFC4C4" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="text" type="region" key="text.*"/>
+
+    <!-- JScrollBarThumb -->
+    <style id="scrollbarthumb">
+        <opaque value ="true"/>
+        <state>
+            <!-- Interactable -->
+            <color value="#E77E7E" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="scrollbarthumb" type="region" key="ScrollBarThumb"/>
+
+    <!-- JScrollBarTrack -->
+    <style id="scrollbartrack">
+        <opaque value ="true"/>
+        <state>
+            <!-- Track -->
+            <color value="#FFDDDD" type="BACKGROUND"/>
+        </state>
+    </style>
+    <bind style="scrollbartrack" type="region" key="ScrollBarTrack"/>
+
+    <!-- JScrollBar -->
+    <style id="scrollbar">
+        <insets/>
+        <state>
+            <property key="ScrollBar.button" value="arrowbutton"/>
+        </state>
+    </style>
+    <bind style="scrollbar" type="region" key="ScrollBar"/>
+
+</synth>
